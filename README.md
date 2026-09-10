@@ -61,11 +61,6 @@ LUFFY/
 - [ ] **luffy/deepscaler/rewards/math_utils/utils.py:1** - Audit math utility functions
 - [ ] **luffy/deepscaler/rewards/reward_types.py:1** - Confirm reward type definitions
 - [ ] **luffy/deepscaler/system_prompts.py:1** - Review and clean up system prompts
-- [x] **luffy/deepscaler/utils.py:45** - Implement OpenAI API client initialization
-- [x] **luffy/deepscaler/utils.py:46** - Add proper authentication handling
-- [x] **luffy/deepscaler/utils.py:47** - Implement exponential backoff retry logic for rate limits
-- [x] **luffy/deepscaler/utils.py:48** - Add comprehensive error handling for different API errors
-- [x] **luffy/deepscaler/utils.py:49** - Implement response parsing and validation
 - [ ] **luffy/deepscaler/utils.py:50** - Add logging for API calls and errors
 - [ ] **luffy/deepscaler/utils.py:51** - Support batch processing for multiple prompts
 - [ ] **luffy/deepscaler/utils.py:52** - Add timeout configuration for API calls
@@ -115,10 +110,8 @@ LUFFY/
 - [ ] **luffy/verl/verl/protocol.py:133** - Optimize tensor view operations for performance
 - [ ] **luffy/verl/verl/protocol.py:134** - Handle non-tensor batch data reshaping properly
 - [ ] **luffy/verl/verl/protocol.py:135** - Add error handling for invalid batch dimensions
-- [ ] **luffy/verl/verl/single_controller/base/base_worker.py:1** - Review base worker abstractions
-- [ ] **luffy/verl/verl/single_controller/ray/ray_worker_group.py:1** - Validate Ray worker group behavior
-- [ ] **luffy/verl/verl/third_party/vllm/worker.py:1** - Check vLLM worker integration
-- [ ] **luffy/verl/verl/trainer/config/ppo_trainer.yaml:1** - Review PPO trainer config defaults
+- [ ] **luffy/verl/verl/protocol.py:156** - (zhangchi.usc1992) add consistency check
+- [ ] **luffy/verl/verl/protocol.py:252** - we can actually lift this restriction if needed
 - [ ] **luffy/verl/verl/trainer/fsdp_sft_trainer.py:77** - add checkpoint manager
 - [ ] **luffy/verl/verl/trainer/fsdp_sft_trainer.py:140** - (zhangchi.usc1992):
 - [ ] **luffy/verl/verl/trainer/fsdp_sft_trainer.py:159** - Implement model loading with proper initialization context
@@ -148,8 +141,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:67** - Handle edge cases and error conditions
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:70** - Implement batch-wise reward computation
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:73** - Add proper error handling and validation
-- [ ] **luffy/verl/verl/trainer/ppo/ppo_trainer.py:1** - Audit PPO trainer core logic
-- [ ] **luffy/verl/verl/trainer/ppo/ray_trainer.py:1** - Review Ray PPO trainer flow
+- [ ] **luffy/verl/verl/trainer/config/ppo_trainer.yaml:1** - Review PPO trainer config defaults
 - [ ] **luffy/verl/verl/utils/checkpoint/fsdp_checkpoint_manager.py:101** - shall we remove previous ckpt every save?
 - [ ] **luffy/verl/verl/utils/checkpoint/fsdp_checkpoint_manager.py:135** - address optimizer is None
 - [ ] **luffy/verl/verl/utils/config.py:1** - Confirm utility config loading
@@ -193,6 +185,9 @@ LUFFY/
 - [ ] **luffy/verl/verl/workers/sharding_manager/fsdp_vllm.py:122** - Current impl doesn't consider FSDP with torch micro-dp
 - [ ] **luffy/verl/verl/workers/sharding_manager/fsdp_vllm.py:130** - shall we build a micro_dp group for vLLM when integrating with vLLM?
 - [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:253** - (sgm): this may not be true for FSDP -> vLLM
+- [ ] **luffy/verl/verl/third_party/vllm/worker.py:1** - Check vLLM worker integration
+- [ ] **luffy/verl/verl/single_controller/base/base_worker.py:1** - Review base worker abstractions
+- [ ] **luffy/verl/verl/single_controller/ray/ray_worker_group.py:1** - Validate Ray worker group behavior
 
 ## Next Steps
 
