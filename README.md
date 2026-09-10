@@ -99,13 +99,13 @@ LUFFY/
 - [ ] **luffy/verl/verl/models/__init__.py:1** - Confirm model exports
 - [ ] **luffy/verl/verl/models/registry.py:21** - (sgm): HF may supported more than listed here, we should add more after testing
 - [ ] **luffy/verl/verl/models/transformers/llama.py:88** - These transpose are quite inefficient but Flash Attention requires the layout [batch_size, sequence_length, num_heads, head_dim]. We would need to refactor the KV cache
-- [x] **luffy/verl/verl/protocol.py:114** - Implement batch dimension folding for efficient processing
-- [x] **luffy/verl/verl/protocol.py:115** - Add validation for batch size compatibility
-- [x] **luffy/verl/verl/protocol.py:116** - Handle edge cases where batch_size is not divisible by new_batch_size
+- [ ] **luffy/verl/verl/protocol.py:114** - Implement batch dimension folding for efficient processing
+- [ ] **luffy/verl/verl/protocol.py:115** - Add validation for batch size compatibility
+- [ ] **luffy/verl/verl/protocol.py:116** - Handle edge cases where batch_size is not divisible by new_batch_size
 - [ ] **luffy/verl/verl/protocol.py:117** - Optimize memory usage during tensor reshaping
 - [ ] **luffy/verl/verl/protocol.py:118** - Add support for different tensor types and shapes
-- [x] **luffy/verl/verl/protocol.py:131** - Implement batch dimension unfolding functionality
-- [x] **luffy/verl/verl/protocol.py:132** - Add support for variable batch dimensions
+- [ ] **luffy/verl/verl/protocol.py:131** - Implement batch dimension unfolding functionality
+- [ ] **luffy/verl/verl/protocol.py:132** - Add support for variable batch dimensions
 - [ ] **luffy/verl/verl/protocol.py:133** - Optimize tensor view operations for performance
 - [ ] **luffy/verl/verl/protocol.py:134** - Handle non-tensor batch data reshaping properly
 - [ ] **luffy/verl/verl/protocol.py:135** - Add error handling for invalid batch dimensions
